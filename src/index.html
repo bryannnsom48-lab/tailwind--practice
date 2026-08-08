@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Intake Form</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="flex items-center justify-center min-h-screen p-4 font-sans antialiased bg-slate-50 text-slate-900 sm:p-8">
+
+    <main class="w-full max-w-xl p-6 transition-all bg-white border shadow-sm border-slate-200/80 rounded-xl sm:p-10">
+        
+        <!-- Header Section -->
+        <header class="mb-8">
+            <span class="text-xs font-semibold tracking-widest uppercase text-emerald-600">Briefing Portal</span>
+            <h1 class="mt-1 text-2xl font-bold tracking-tight text-slate-900">Initiate Your Project</h1>
+            <p class="mt-2 text-sm text-slate-500">Submit your baseline specifications. We review structures within one business cycle.</p>
+        </header>
+
+        <!-- Intake Form -->
+        <form class="space-y-6">
+            
+            
+            <div class="space-y-1.5">
+                <label for="client-name" class="block text-xs font-medium tracking-wider uppercase text-slate-700">Full Name</label>
+                <input type="text" id="client-name" required 
+                       class="w-full px-4 py-3 text-sm transition-colors border rounded-lg bg-slate-50 border-slate-200 text-slate-900 focus:outline-none focus:border-emerald-500 focus:bg-white">
+            </div>
+
+            <!-- Communication Channel -->
+            <div class="space-y-1.5">
+                <label for="client-email" class="block text-xs font-medium tracking-wider uppercase text-slate-700">Secure Email Address</label>
+                <input type="email" id="client-email" required 
+                       class="w-full px-4 py-3 text-sm transition-colors border rounded-lg bg-slate-50 border-slate-200 text-slate-900 focus:outline-none focus:border-emerald-500 focus:bg-white">
+            </div>
+
+            <!-- Project Vector Selection -->
+            <div class="space-y-1.5">
+                <label for="project-type" class="block text-xs font-medium tracking-wider uppercase text-slate-700">Project Classification</label>
+                <select id="project-type" required
+                        class="w-full px-4 py-3 text-sm transition-colors border rounded-lg appearance-none bg-slate-50 border-slate-200 text-slate-900 focus:outline-none focus:border-emerald-500 focus:bg-white">
+                    <option value="" disabled selected hidden>Select a system type...</option>
+                    <option value="systems">Low-Level Systems Architecture (C/C++)</option>
+                    <option value="backend">Web Backend Architecture (Django)</option>
+                    <option value="automation">Localized AI Solution Automation</option>
+                </select>
+            </div>
+
+            <!-- Core Specifications -->
+            <div class="space-y-1.5">
+                <label for="project-desc" class="block text-xs font-medium tracking-wider uppercase text-slate-700">Core Specifications & Scope</label>
+                <textarea id="project-desc" rows="4" required placeholder="Describe constraints, performance targets, and parameters..."
+                          class="w-full px-4 py-3 text-sm transition-colors border rounded-lg resize-none bg-slate-50 border-slate-200 text-slate-900 focus:outline-none focus:border-emerald-500 focus:bg-white"></textarea>
+            </div>
+
+            <!-- Submission Trigger -->
+            <div class="pt-2">
+                <button type="submit" 
+                        class="w-full bg-slate-950 text-white font-medium text-sm py-3.5 px-4 rounded-lg hover:bg-slate-800 focus:outline-none active:bg-slate-900 transition-colors shadow-sm">
+                    Transmit Project Brief
+                </button>
+            </div>
+            
+        </form>
+    </main>
+
+</body>
+</html>
