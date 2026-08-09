@@ -12,4 +12,4 @@ A classic but simple design of a user friendly form using tailwind css
 * **Input States**: Smooth transition shifts when inputs gain active focus.
 
 ## 🌐 Live Deployment
-* **Netlify Link**: [Pending Deployment]
+* **Netlify Link**: [Click here to view the live form](https://simple-tailwind-form.netlify.app/)
